@@ -16,14 +16,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'date_of_birth')->textInput() ?>
+    <?= $form->field($model, 'date_of_birth')->textInput(['type' => 'date']) ?>
 
-    <?= $form->field($model, 'tel')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'role_id')->textInput() ?>
+    <?= $form->field($model, 'tel')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Зарегистрироваться', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
