@@ -38,7 +38,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             [['role_id'], 'integer'],
             [['fio'], 'string', 'max' => 511],
             [['password', 'tel'], 'string', 'max' => 255],
-            [['tel'], 'unique'],
+            [['password'], 'match', 'pattern' => '/^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/', 'message' => 'Пароль должен содержать минимум одну букву, одну цифру и быть не менее 8 символов'],
+            [['tel'], 'unique', 'message' => 'Этот номер уже используется.'],
             [['role_id'], 'exist', 'skipOnError' => true, 'targetClass' => Role::class, 'targetAttribute' => ['role_id' => 'id']],
         ];
     }
@@ -55,6 +56,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             'date_of_birth' => 'Дата рождения',
             'tel' => 'Телефон',
             'role_id' => 'Role ID',
+            'password_confirmation' => 'Повторите пароль',
         ];
     }
 
