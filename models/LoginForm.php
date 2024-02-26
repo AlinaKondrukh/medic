@@ -32,6 +32,14 @@ class LoginForm extends Model
             ['rememberMe', 'boolean'],
         ];
     }
+    public function attributeLabels()
+    {
+        return [
+            'password' => 'Пароль',
+            'tel' => 'Телефон',
+            'rememberMe' => 'Запомнить меня',
+        ];
+    }
 
       /**
      * Logs in a user using the provided username and password.
