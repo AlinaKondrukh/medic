@@ -50,9 +50,9 @@ class Reception extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'patient_fio' => Yii::t('app', 'Patient Fio'),
-            'date_of_reception' => Yii::t('app', 'Date Of Reception'),
-            'description' => Yii::t('app', 'Description'),
+            'patient_fio' => Yii::t('app', 'ФИО пациента'),
+            'date_of_reception' => Yii::t('app', 'Дата и время записи'),
+            'description' => Yii::t('app', 'Описание причины посещения'),
             'user_id' => Yii::t('app', 'User ID'),
             'status_id' => Yii::t('app', 'Status ID'),
         ];

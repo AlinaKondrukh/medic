@@ -14,16 +14,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'patient_fio')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'date_of_reception')->textInput() ?>
+    <?= $form->field($model, 'date_of_reception')->textInput(['type' => 'datetime-local']) ?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
-
-    <?= $form->field($model, 'status_id')->textInput() ?>
-
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Записаться', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

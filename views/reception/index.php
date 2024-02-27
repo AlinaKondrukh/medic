@@ -10,7 +10,7 @@ use yii\widgets\Pjax;
 /** @var app\models\ReceptionSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Receptions';
+$this->title = 'Заявления';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="reception-index">
@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Reception', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать заявление', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -29,19 +29,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
             'patient_fio',
             'date_of_reception',
             'description:ntext',
-            'user_id',
-            //'status_id',
-            [
-                'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Reception $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'id' => $model->id]);
-                 }
-            ],
+            'status',
         ],
     ]); ?>
 

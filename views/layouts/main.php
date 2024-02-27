@@ -38,13 +38,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     ]);
     $items = [
         ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $items[] = ['label' => 'Вход', 'url' => ['/site/login']];
         $items[] = ['label' => 'Регистрация', 'url' => ['/site/register']];
     } else {
+        $items[] = ['label' => 'Мои записи', 'url' => ['/reception/index']];
+        $items[] = ['label' => 'Создать запись', 'url' => ['/reception/create']];
         $items[] = '<li class="nav-item">'
         . Html::beginForm(['/site/logout'])
         . Html::submitButton(
