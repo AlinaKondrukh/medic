@@ -27,8 +27,8 @@ $logo = Html::img('@web/images/logo.jpg', ['alt' => 'Логотип', 'class' =>
 <head>
     <title><?= Html::encode($this->title) ?></title>
     <?php // подключение css ?>
-    <link rel="stylesheet" href="/css/style.css">
     <?php $this->head() ?>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
@@ -68,7 +68,7 @@ $logo = Html::img('@web/images/logo.jpg', ['alt' => 'Логотип', 'class' =>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
+    <div class="">
         <?php if (!empty($this->params['breadcrumbs'])): ?>
             <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
         <?php endif ?>
@@ -79,13 +79,13 @@ $logo = Html::img('@web/images/logo.jpg', ['alt' => 'Логотип', 'class' =>
 
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="navbar-nav align-items-center">
-    <div class="container">
+    <div class="">
         <div class="row text-muted">
             <div class="col-md-6 text-center text-md-start">
                 <ul class="navbar-nav">
-                <li class="nav-item"><u>Контактные данные:</u></li><br>
-                <li class="nav-item">телефон: +7 (999) 888 33-22</li><br>
-                <li class="nav-item">почта: med-plus@mail.ru</li>
+                <li class="nav-item"><u>Контактные данные:</u></li>
+                <li class="nav-item">+7 (999) 888 33-22</li>
+                <li class="nav-item">med-plus@mail.ru</li>
                 </ul>  
             </div>
             <div class="col-md-6 text-center text-md-end">
