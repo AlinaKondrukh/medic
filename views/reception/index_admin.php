@@ -37,8 +37,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     $html = Html::beginForm(['update', 'id' => $reception->id]);
                     $html .= Html::activeDropDownList($reception, 'status_id',
                     [
-                        2 => 'Подтверждена',
-                        3 => 'Отклонена'
+                        1 => 'Принята',
+                        2 => 'Отклонена'
                     ],
                     [
                         'prompt' => [
