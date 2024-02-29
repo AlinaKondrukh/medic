@@ -6,7 +6,14 @@ $this->title = 'Главная';
 ?>
 <div class="site-index">
 <main>
-
+  <style>
+    h1 {
+      color: rgb(23, 42, 83);
+      font-size: 6em;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+<h1 align="center">МедПлюс</h1>
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -19,7 +26,7 @@ $this->title = 'Главная';
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>О нас</h1>
+            <h1 class="h2">О нас</h1>
             <p>Наша клиника уникальна тем, что мы лечим алкогольную и прочие зависимости по существующим в мировой клинической практике стандартам качественной медико-социальной помощи, обусловленным научно доказанной эффективностью и экономической доступностью.</p>
           </div>
         </div>
@@ -53,18 +60,11 @@ $this->title = 'Главная';
     </button>
   </div>
 
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
       <img class="bd-placeholder-img img-krug" src="/images/pic1.png" alt="фото">
-
         <h2>Быстро</h2>
         <p>Моментально рассмотрим вашу заявку и направим заявление на рассмотрение врачу.</p>
       </div><!-- /.col-lg-4 -->
@@ -75,15 +75,10 @@ $this->title = 'Главная';
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <img class="bd-placeholder-img img-krug" src="/images/pic3.png" alt="фото">
-
-
         <h2>Надежно</h2>
         <p>Гарантированно окажем помощь, иначе вернем полную сумму, затраченную на лечение./p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
+      </div>
+    </div>
 
     <hr class="featurette-divider">
 
@@ -94,7 +89,6 @@ $this->title = 'Главная';
       </div>
       <div class="col-md-5">
       <img class="bd-placeholder-img img-a" src="/images/p1.png" alt="фото">
-
       </div>
     </div>
 
@@ -102,12 +96,11 @@ $this->title = 'Главная';
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading" align="right">Индивидуальный подход </h2>
-        <p class="lead" align="right">Каждому пациенту в клинике предоставляется индивидуальный план лечения, который разрабатывается с учетом его индивидуальных потребностей и особенностей. Учитывая физическое, психологическое и социальное состояние пациента, специалисты создают карточку личной истории болезни и разрабатывают оптимальную программу терапии.</p>
+        <h2 class="featurette-heading">Индивидуальный подход </h2>
+        <p class="lead">Каждому пациенту в клинике предоставляется индивидуальный план лечения, который разрабатывается с учетом его индивидуальных потребностей и особенностей. Учитывая физическое, психологическое и социальное состояние пациента, специалисты создают карточку личной истории болезни и разрабатывают оптимальную программу терапии.</p>
       </div>
       <div class="col-md-5 order-md-1">
       <img class="bd-placeholder-img img-a" src="/images/2.png" alt="фото">
-
       </div>
     </div>
 
@@ -120,15 +113,10 @@ $this->title = 'Главная';
       </div>
       <div class="col-md-5">
       <img class="bd-placeholder-img img-a" src="/images/3.png" alt="фото">
-        
-
       </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
+  </div>
 </div>

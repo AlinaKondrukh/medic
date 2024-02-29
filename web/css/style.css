@@ -15,7 +15,7 @@
 .img-krug {
     height: 50%;
     width: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .img-a {
     height: 100%;
