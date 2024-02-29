@@ -68,7 +68,7 @@ $logo = Html::img('@web/images/logo.jpg', ['alt' => 'Логотип', 'class' =>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="">
+    <div class="container">
         <?php if (!empty($this->params['breadcrumbs'])): ?>
             <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
         <?php endif ?>
